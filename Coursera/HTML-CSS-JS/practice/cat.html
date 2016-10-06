@@ -3,12 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>Cat's Website</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 	<style type="text/css">
 		.red-text {
 			color: red;
 		}
 		h2 {
-			font-family: arial;
+			font-family: Lobster;
 		}
 		p {
 			font-family : Monospace;
@@ -31,10 +33,12 @@
 </head>
 
 <body>
-	<h2 class= "red-text">CatPhotoApp</h2>
+	<div class = "container-fluid">
+	<h2 class= "red-text text-center">CatPhotoApp</h2>
 	<a href="#"><img class ="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt ="Cat's image"></a>
 	<br/><br/>
-	
+	<img class = "img-responsive" src = "https://bit.ly/fcc-running-cats">
+	<buttom class="btn btn-block btn-primary">Like</buttom>
 	<div class="silver-bg">
 	<p>Things cats love</p>
 	<ul>
@@ -64,8 +68,9 @@
 			<label><input type="checkbox" name="personality">Energetic</label>
 			<br/><br/>
 			<button type="submit">Submit</button>
+
 	</form>
 	</div>
-
+	</div>
 </body>
 </html>
