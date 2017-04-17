@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Hello Flask</title>
+        <link href="{{ css_url }}" rel="stylesheet" type="text/css"></link>
+    </head>
+	<body>
+		<form method = "post">
+			<div>
+				<label for = "beer">Choose your favourite beer!</label>
+				<input type="text" name="beer"/>
+			</div>
+		</form>
+			<div class = 'hidden'>
+				<h2>Recommendations for you are :</h2>
+			</div>
+			<table class = 'hidden'>
+				<tbody>
+					{% for beer in rec_beers %}
+					<tr>
+						<td>{{ beer }}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+			<br/>
+			<h3 class = 'hidden'>Current Arm is {{ arm }} and epsilon is {{ epsilon }}</h3>
+	</body>
+</html>
+
